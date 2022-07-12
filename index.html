@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="img js-fullheight" style="background-image: url('https://cms-assets.themuse.com/media/lead/_1200x630_crop_center-center_82_none/22238.jpg?mtime=1568834549');">
+    <form action="index.html" class="signin-form">
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center" style="display: none;">
+                    <div class="col-md-6 text-center mb-5">
+                        <h1 class="heading-section">Login</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="login-wrap p-0">
+                            <h2 class="mb-4 text-center">Login</h2>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" id="uname">
+                                <i class="fa fa-check-square"></i>
+                                <i class="fa fa-exclamation-triangle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" id="password">
+                                <!-- <span toggle="#password-field"
+                                    class="fa fa-fw fa-eye field-icon toggle-password"></span> -->
+                                <i class="fa fa-check-square"></i>
+                                <i class="fa fa-exclamation-triangle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-group">
+                                <!-- <button type="button" id="loginBtn" class="form-control btn btn-primary submit px-3">Sign In</button> -->
+                                <button type="button" class="form-control btn btn-primary submit px-3" id="loginBtn" onclick="checkInputs()">Login</button>
+                            </div>
+                            <div class="form-group d-md-flex" style="display: none !important;">
+                                <div class="w-50">
+                                    <label class="checkbox-wrap checkbox-primary">Remember Me
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <br>
+                                </div>
+                                <div class="w-50 text-md-right">
+                                    <a href="#" style="color: #fff">Forgot Password</a>
+                                </div>
+                            </div>
+
+                            <p class="w-100 text-center" style="display: none !important;">&mdash; Or Sign In With &mdash;</p>
+                            <div class="social d-flex text-center" style="display: none !important;">
+                                <a href="#" class="px-2 py-2 mr-md-1 rounded"><span
+                                        class="ion-logo-facebook mr-2"></span>
+                                    Facebook</a>
+                                <a href="#" class="px-2 py-2 ml-md-1 rounded"><span
+                                        class="ion-logo-twitter mr-2"></span>
+                                    Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    
+    <script src="validation.js"></script>
+</body>
+
+</html>
